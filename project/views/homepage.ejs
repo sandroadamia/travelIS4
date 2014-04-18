@@ -22,6 +22,15 @@ setTimeout(function sunrise () {
             <li class="clearfix">
                 <div class="step">
                     <div class="sprite one"></div>
+                    <h3><input type="text" ng-model="username"></h3>
+                    <p>
+                        {{username}} <code>sails generate api user</code>.  This will create two files: a <a href="http://links.sailsjs.org/docs/models">model</a> <code class="pocket">api/models/User.js</code> and a <a href="http://links.sailsjs.org/docs/controllers">controller</a><code class="pocket">api/controllers/UserController.js</code>.
+                    </p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="step">
+                    <div class="sprite one"></div>
                     <h3>Generate a REST API.</h3>
                     <p>
                         Run <code>sails generate api user</code>.  This will create two files: a <a href="http://links.sailsjs.org/docs/models">model</a> <code class="pocket">api/models/User.js</code> and a <a href="http://links.sailsjs.org/docs/controllers">controller</a><code class="pocket">api/controllers/UserController.js</code>.
