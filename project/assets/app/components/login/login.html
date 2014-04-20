@@ -1,1 +1,37 @@
-<div>login</div>
+<div class="row login-directive panel" >
+    <form name="login">
+        <div class="large-12">
+            <h3 class="t-login-headeing">Log in the system</h3>
+
+        </div>
+        <hr />
+        <div class="row collapse t-padding-bottom">
+            <div class="small-3 large-2 columns">
+                <span class="prefix left"><i class="icon-person"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+                <input type="text" name="username" ng-model="user.username" required ng-minlength="3" placeholder="Username"/>
+            </div>
+            <div class="small-10 large-10 columns">
+                <small ng-show="login.username.$error.minlength" class="error t-error">Username is too short</small>
+                <small ng-show="login.username.$error.required && !login.username.$pristine" class="error t-error">Username is required</small>
+            </div>
+        </div>
+        <div class="row collapse t-padding-bottom">
+            <div class="small-3 large-2 columns">
+                <span class="prefix left"><i class="icon-key-1"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+                <input type="password" name="password" ng-model="user.password" ng-minlength="4" required placeholder="Password"/>
+            </div>
+            <div class="small-10 large-10 columns">
+                <small ng-show="login.password.$error.minlength" class="error t-error">Password is too short</small>
+                <small ng-show="login.password.$error.required && !login.password.$pristine" class="error t-error">Username is required</small>
+            </div>
+        </div>
+        <!--{{!login.$pristine}}-->
+        <div class="row collapse">
+            <button ng-disabled="login.$invalid || login.$pristine"  ng-class="{'button small right':true}">Submit</button>
+        </div>
+    </form>
+</div>
