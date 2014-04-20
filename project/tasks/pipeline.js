@@ -32,6 +32,7 @@ var jsFilesToInject = [
 //    'lib/**/*.js',
     'lib/angular/*.js',
     'lib/angular-route/*.js',
+    'lib/angular-ui-route/*.js',
     'lib/angular-foundation/*.js',
 
     'app/**/*.js',
