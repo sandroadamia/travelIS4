@@ -31,8 +31,8 @@ var jsFilesToInject = [
     //vendor specific libraries from bower components should go to lib
 //    'lib/**/*.js',
     'lib/angular/*.js',
-    'lib/angular-route/*.js',
-    'lib/angular-ui-route/*.js',
+    //'lib/angular-route/*.js',
+    'lib/angular-ui-router/*.js',
     'lib/angular-foundation/*.js',
 
     'app/**/*.js',
